@@ -1,0 +1,125 @@
+.background {
+    display:flex;
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+.right-container{
+    width: 20%;
+  /*  background-color:yellow;*/
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    align-items: center;
+}
+.profile-container{
+    height: 30%;
+    width: 100%;
+    /*background-color:gray;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.profile-container img {
+    width: 30%;
+    height: 30%;
+    border-radius: 100%;
+}
+.menu_items-container{
+    height: 100%;
+    width: 100%;
+   /* background-color:blue;*/
+}
+.left-container{
+    width: 80%;
+    /*background-color:green;*/
+    height: 100%;
+    justify-content: space-between;
+    position: relative;
+}
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100px;
+}
+.input{
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 400px;
+    padding: 0px 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: black;
+    font-size: 16px;
+    height: 50px;
+    outline: none;
+}
+::placeholder {
+    color: gray;
+}
+.carousel{
+    width: 100%;
+    overflow: scroll;
+    padding: 30px;
+    position: relative;
+}
+.carousel-container {
+    white-space: nowrap;
+    margin: 70px 0px;
+}
+.carousel-item {
+    /*background-color: red;*/
+    width: 150px;
+    height: 200px;
+    border-radius: 30px;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 10px;  
+    transition: 0.8s all;
+    transform-origin: center left;
+    cursor: pointer;
+    position: relative;
+    
+}
+.carousel-container:hover .carousel-item:hover {
+    transform: scale(1.5);
+    opacity: 1;
+}
+.carousel-container:hover .carousel-item {
+    opacity: 0.3;
+}
+.carousel-item:hover ~ .carousel-item {
+    transform: translate3d(100px, 0px, 0px);
+}
+.carousel-item__img{
+    width: 150px;
+    height: 200px;
+    
+} 
+.carousel-item__img {
+    width: 150px;
+    height: 200px;
+    border-radius: 30px;
+    
+}
+.carousel-item_animate {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+    opacity: 0;
+    position: absolute;
+    top: 0;        
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 30px;
+    transition: 450ms;
+}
+.carousel-item_animate img {
+    width: 40px; height: 40px;
+}
+.carousel-item_animate:hover{
+    opacity: 1;
+}
